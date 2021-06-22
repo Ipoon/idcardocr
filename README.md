@@ -12,12 +12,12 @@
 > ~~`sudo cp tessdata/* /usr/share/tesseract-ocr/tessdata`~~<br>
 # 使用方法：
 > 识别本地图片<br>
-> `import idcard_recognize;print idcard_recognize.process('testimages/3.jpg')`<br><br>
+> `import idcard_recognize; print idcard_recognize.process('testimages/3.jpg')`<br><br>
 > http_server远程接收图片<br>
 > `python3 idcard_recognize.py`  <br>
 > 默认监听端口为8080 <br><br>
 > Docker运行http_server:  <br>
-> `docker pull raymondwong/idcardocr;docker run -d -p 8080:8080 raymondwong/idcardocr`  <br>
+> `docker pull raymondwong/idcardocr; docker run -d -p 8080:8080 raymondwong/idcardocr`  <br>
 >> 测试:  <br>
 >>> 使用curl向服务器发送图片:  <br>
 >>>`curl --request POST \

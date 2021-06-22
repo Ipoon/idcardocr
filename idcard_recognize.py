@@ -62,7 +62,6 @@ class S(BaseHTTPRequestHandler):
         self.end_headers()
         self.wfile.write(json.dumps(result).encode('utf-8'))
 
-
 def http_server(server_class=ForkingServer, handler_class=S, port=8080):
     server_address = ('', port)
     httpd = server_class(server_address, handler_class)
