@@ -1,4 +1,7 @@
-FROM ubuntu:18.10
+
+############################################################################
+# 制作docker 镜像 sudo docker build -t winchell/idcardocr:1.0.0 .
+FROM ubuntu:18.04
 ADD . /idcardocr
 #ADD tessdata/. /usr/share/tesseract-ocr/tessdata
 WORKDIR /idcardocr
